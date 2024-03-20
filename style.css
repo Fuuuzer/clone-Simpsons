@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+.header {
+  height: 50px;
+  background: blue;
+}
+
+.header__icons {
+  width: 30px;
+}
