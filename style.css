@@ -1,19 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
 }
 
-svg {
+svg,
+img {
   display: block;
   max-width: 100%;
 }
 
-.header {
-  height: 50px;
-  background: blue;
+.container {
+  background: #161616;
 }
 
-.header__icons {
-  width: 30px;
+.top__itens {
+  display: flex;
+  justify-content: end;
+  gap: 25px;
+}
+
+.top__item:hover path {
+  fill: white;
+}
+
+.top__itens:last-child {
+  margin-right: 40px;
+}
+
+.top__item {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.top__item svg {
+  width: 35px;
+  height: 20px;
+}
+
+.nav__container {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.header__itens {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-left: 40px;
+  font-size: 18px;
+  gap: 40px;
+}
+
+.background__homer {
+  background-image: url("/img/simpsons_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 350px;
+  position: relative;
+}
+
+.background__homer {
+  display: flex;
+  justify-content: center;
+}
+.main__title {
+  margin-top: 100px;
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__title::after {
+  margin-top: 30px;
+  display: block;
+  content: "";
+  width: 250px;
+  height: 8px;
+  background: #fff;
+}
+
+.section__container {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 60px;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section__text {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+  color: #2d2d2d;
+}
+
+.game__img {
+  width: 450px;
+}
+
+span {
+  color: orange;
 }
