@@ -91,7 +91,7 @@ img {
 }
 
 .section__container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   margin-top: 60px;
   gap: 50px;
@@ -106,9 +106,64 @@ img {
 }
 
 .game__img {
-  width: 450px;
+  width: 380px;
+  margin-left: 50px;
 }
 
 span {
   color: orange;
+}
+
+.informations__container {
+  margin-top: 50px;
+  background: #eaeaea;
+}
+
+.informations {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  height: 150px;
+  grid-template-columns: 3fr 1fr;
+}
+
+.informations__questions {
+  margin-top: 30px;
+}
+
+.informations__list {
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  gap: 45px;
+}
+
+.informations__list a {
+  color: #2d2d2d;
+}
+
+.informations__list a:hover {
+  color: #ca4a00;
+}
+
+.informations__social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social__list {
+  display: flex;
+  gap: 25px;
+  justify-content: end;
+  margin-top: 15px;
+}
+
+.social__list li {
+  width: 25px;
+}
+
+.informations__title {
+  font-size: 14px;
+  text-align: end;
+  margin-top: 30px;
 }
