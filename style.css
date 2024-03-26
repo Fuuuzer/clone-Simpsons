@@ -15,6 +15,7 @@ img {
   max-width: 100%;
 }
 
+/* TOP ITENS */
 .container {
   background: #161616;
 }
@@ -43,6 +44,9 @@ img {
   height: 20px;
 }
 
+/* FIM TOP ITENS */
+
+/* HEADER */
 .nav__container {
   display: flex;
   align-items: center;
@@ -57,7 +61,9 @@ img {
   font-size: 18px;
   gap: 40px;
 }
+/* FIM HEADER */
 
+/* PARTE PRINCIPAL */
 .background__homer {
   background-image: url("/img/simpsons_background.jpg");
   background-size: cover;
@@ -113,7 +119,9 @@ img {
 span {
   color: orange;
 }
+/* FIM PRINCIPAL */
 
+/* INFORMAÇÕES */
 .informations__container {
   margin-top: 50px;
   background: #eaeaea;
@@ -123,7 +131,6 @@ span {
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  height: 150px;
   grid-template-columns: 3fr 1fr;
 }
 
@@ -155,7 +162,7 @@ span {
   display: flex;
   gap: 25px;
   justify-content: end;
-  margin-top: 15px;
+  margin: 15px 0;
 }
 
 .social__list li {
@@ -168,6 +175,9 @@ span {
   margin-top: 30px;
 }
 
+/* FIM INFORMAÇÕES */
+
+/* FOOTER */
 .footer__list {
   display: flex;
   flex-wrap: wrap;
@@ -196,4 +206,47 @@ span {
   padding: 15px 35px;
   border: 2px solid #a3a3a3;
   border-radius: 4px;
+}
+/* FOOTER */
+
+/* PRIMEIRA QUEBRA */
+@media (max-width: 1000px) {
+  .header__itens {
+    display: none;
+  }
+
+  .logo__svg {
+    padding: 15px;
+    width: 200px;
+  }
+
+  .section__container,
+  .informations {
+    max-width: 700px;
+    margin-top: 30px;
+  }
+  .section__container p {
+    font-size: 20px;
+  }
+
+  .section__container {
+    flex-wrap: wrap;
+  }
+
+  .informations {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .background__homer {
+    height: 250px;
+  }
+
+  .informations__social {
+    justify-self: start;
+  }
+
+  .informations__title {
+    text-align: left;
+  }
 }
